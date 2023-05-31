@@ -1,9 +1,14 @@
 pipeline {
  agent any
  stages {
-  steage(Stage1){
+  stage(Stage1){
     steps{
       sh 'echo ciao da github'
+    }
+  }
+  stage(Stage2){
+    steps{
+      sh '/bin/bash prog1.sh'
     }
   }
  }
